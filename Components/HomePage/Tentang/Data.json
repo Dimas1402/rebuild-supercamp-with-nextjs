@@ -1,0 +1,28 @@
+{
+    "Data":[
+        {
+            "id":0,
+            "title":"Dinamis",
+            "img":"bisnis.png",
+            "text":"Belajar pemrograman tidak hanya terpaut dengan satu teknologi, melainkan terus update berdasarkan kebutuhan dunia kerja"
+        },
+        {
+            "id":1,
+            "title":"Profesional",
+            "img":"bisnis.png",
+            "text":"Belajar dengan orang yang sudah berpengalaman dalam mengajar, hal ini akan efektif karena materi nantinya akan mudah diserap dan mudah dipraktikan"
+        },
+        {
+            "id":2,
+            "title":"Kreatif",
+            "img":"bisnis.png",
+            "text":"Belajar tidak hanya untuk bekerja, melainkan juga meberikan wawasan untuk menciptakan peluang usaha"
+        },
+        {
+            "id":3,
+            "title":"Sinergi",
+            "img":"bisnis.png",
+            "text":"Belajar bukan untuk bersaing, melainkan untuk menciptakan budaya kerjasama dalam kebersamaan membangun negeri"
+        }
+    ]
+}

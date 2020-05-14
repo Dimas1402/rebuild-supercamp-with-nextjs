@@ -1,0 +1,34 @@
+{
+    "Data" : [
+        {
+            "id":0,
+            "text":"Modul disusun dalam bahasa Indonesia.",
+            "img":""
+        },
+        {
+            "id":1,
+            "text":"Dibimbing oleh  trainer yang sudah  mempunyai pengalaman dibidangnya.",
+            "img":""
+        },
+        {
+            "id":2,
+            "text":"Penginapan gratis bagi peserta luar kota.",
+            "img":""
+        },
+        {
+            "id":3,
+            "text":"Biaya pelatihan murah.",
+            "img":""
+        },
+        {
+            "id":4,
+            "text":"30% teori, 70% praktik langsung kedalam projek.",
+            "img":""
+        },
+        {
+            "id":5,
+            "text":"Join grup telegram alumni unutk diskusi materi atau info loker.",
+            "img":""
+        }
+    ]
+}
