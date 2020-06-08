@@ -1,7 +1,7 @@
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   textP: {
     fontSize: "40px",
     margin: "20px",
@@ -18,7 +18,24 @@ const useStyles = makeStyles({
     height: "80px",
     marginLeft: "50px",
   },
-});
+  [theme.breakpoints.down("xs")]: {
+    img1: {
+      width: "50px",
+      height: "50px",
+      marginRight: "30px",
+      margin: "10px",
+    },
+    img2: {
+      width: "70px",
+      height: "40px",
+      marginRight: "30px",
+      margin: "10px",
+    },
+    textP: {
+      fontSize: "20px",
+    },
+  },
+}));
 
 const Supported = () => {
   const classes = useStyles();

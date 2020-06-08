@@ -6,6 +6,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Link from "next/link";
 
 const useStyles = makeStyles({
   h3: {
@@ -77,9 +78,11 @@ const Program = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Lihat Selengkapnya
-              </Button>
+              <Link href={index === 0 ? "/berbayar" : "/gratis"}>
+                <Button size="small" color="primary">
+                  Lihat Selengkapnya
+                </Button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>

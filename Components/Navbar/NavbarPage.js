@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Navbar = () => {
+const NavbarPage = () => {
   const classes = useStyles();
   const Logo = require("../../Assets/logo.png");
   const [nvbar, setNvbar] = React.useState(false);
@@ -79,7 +79,7 @@ const Navbar = () => {
           <Drawers />
 
           <img className={classes.img} src={Logo} />
-          <div
+          {/* <div
             className={classes.menuLg}
             style={{ position: "absolute", right: "0" }}
           >
@@ -92,32 +92,14 @@ const Navbar = () => {
               "Testimoni",
               "Kontak",
             ].map((text, index) => (
-              <Button
-                href={
-                  text === "Beranda"
-                    ? "#beranda"
-                    : text === "Tentang"
-                    ? "#tentang"
-                    : text === "Program"
-                    ? "#program"
-                    : text === "Support"
-                    ? "#support"
-                    : text === "Portofolio"
-                    ? "#portofolio"
-                    : text === "Testimoni"
-                    ? "#testimoni"
-                    : "#kontak"
-                }
-                className={classes.btnFont}
-              >
-                {" "}
+              <Button className={classes.btnFont}>
                 <Typography variant="a">{text}</Typography>
               </Button>
             ))}
-          </div>
+          </div> */}
         </Toolbar>
       </AppBar>
     </div>
   );
 };
-export default Navbar;
+export default NavbarPage;

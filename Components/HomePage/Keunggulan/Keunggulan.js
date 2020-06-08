@@ -7,10 +7,9 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Data from "./Data.json";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     boxShadow: "3px 3px 8px 0px rgba(0,0,0,0.15)",
-
     margin: "10px",
   },
   media: {
@@ -22,7 +21,12 @@ const useStyles = makeStyles({
     height: "200px",
     witdh: "100px",
   },
-});
+  [theme.breakpoints.down("sm")]: {
+    root: {
+      width: "300px",
+    },
+  },
+}));
 
 export default function Keunggulan() {
   const classes = useStyles();

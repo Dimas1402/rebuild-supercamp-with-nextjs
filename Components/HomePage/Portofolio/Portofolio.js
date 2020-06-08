@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Swiper from "swiper";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   img: {
     width: 400,
     height: 250,
@@ -26,7 +26,13 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "row-reverse",
   },
-});
+  [theme.breakpoints.down("xs")]: {
+    img: {
+      width: "300px",
+      height: "200px",
+    },
+  },
+}));
 const Portofolio = () => {
   const classes = useStyles();
   const [sizeWindow, setSizeWindow] = React.useState(0);

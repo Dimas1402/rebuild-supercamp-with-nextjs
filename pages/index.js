@@ -6,6 +6,11 @@ export default function Home() {
     <>
       <Navbar />
       <HomePage />
+      <style global jsx>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
     </>
   );
 }

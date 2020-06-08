@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     margin: "20px",
@@ -37,7 +37,12 @@ const useStyles = makeStyles({
   boxText: {
     width: "50%",
   },
-});
+  [theme.breakpoints.down("xs")]: {
+    boxText: {
+      marginBottom: "20px",
+    },
+  },
+}));
 
 export default function Founder() {
   const classes = useStyles();

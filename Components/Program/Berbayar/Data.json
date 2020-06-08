@@ -1,0 +1,46 @@
+{
+    "Data":[
+        {
+            "id": 0,
+            "text":"Membuat Website Resposive",
+            "waktu":"1 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Tersedia"
+        },
+        {
+            "id": 1,
+            "text":"Membuat Aplikasi QR Scanner",
+            "waktu":"1 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 2,
+            "text":"React Js Basic",
+            "waktu":"30 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 3,
+            "text":"React Native basic",
+            "waktu":"30 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 4,
+            "text":"REACT NATIVE : Redux Dasar Dan Penerapan",
+            "waktu":"30 hari",
+            "Tingkat" :"Menengah",
+            "siap" : "Segera"
+        },
+        {
+            "id": 5,
+            "text":"REACT JS : Redux Dasar Dan Penerapan",
+            "waktu":"30 hari",
+            "Tingkat" :"Menengah",
+            "siap" : "Segera"
+        }
+    ]
+}

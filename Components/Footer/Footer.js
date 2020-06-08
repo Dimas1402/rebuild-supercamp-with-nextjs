@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     maxWidth: 345,
     margin: "20px",
-    marginTop: "50px",
+    // marginTop: "50px",
   },
   media: {
     width: "50px",
@@ -73,7 +73,7 @@ const Footer = () => {
       <Grid item lg={3}>
         <Card className={classes.root}>
           <CardActionArea className={classes.cardBox}>
-            <CardContent>
+            <CardContent justifyContent="center">
               <p className={classes.text}>Supercamp </p>
               <p className={classes.text1}>Programmer</p>
               <p className={classes.text2}>
@@ -95,7 +95,10 @@ const Footer = () => {
                 image={index === 0 ? lokasi : index === 1 ? kontak : email}
                 title="Contemplative Reptile"
               />
-              <CardContent style={{ textAlign: "center" }}>
+              <CardContent
+                justifyContent="center"
+                style={{ textAlign: "center" }}
+              >
                 <Typography style={{ color: "white" }} gutterBottom variant="p">
                   {res.text1}
                 </Typography>
@@ -107,11 +110,32 @@ const Footer = () => {
                 >
                   {res.text2}
                 </Typography>
+                <Typography
+                  style={{ color: "white" }}
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                >
+                  {res.text3}
+                </Typography>
+                <Typography
+                  style={{ color: "white" }}
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                >
+                  {res.text4}
+                </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </Grid>
       ))}
+      <div style={{ background: "#012154", width: "100%" }}>
+        <p style={{ color: "white", textAlign: "center" }}>
+          © 2019 Copyright Supercamp Programmer
+        </p>
+      </div>
     </>
   );
 };

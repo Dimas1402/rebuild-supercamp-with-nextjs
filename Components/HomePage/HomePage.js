@@ -121,6 +121,9 @@ const useStyles = makeStyles((theme) => ({
       position: "relative",
       top: "-60px",
     },
+    textTitle: {
+      fontSize: "35px",
+    },
   },
 }));
 
@@ -135,7 +138,7 @@ const HomePage = () => {
         // style={{ border: "2px solid black" }}
         container
       >
-        <Grid item xs={6} sm={4} lg={4}>
+        <Grid id="beranda" item xs={6} sm={4} lg={4}>
           <div className={classes.boxText}>
             <p className={classes.text}>Supercamp </p>
             <p className={classes.text1}>Programmer</p>
@@ -154,7 +157,12 @@ const HomePage = () => {
           <img className={classes.img} src={img} alt="" />
         </Grid>
       </Grid>
-      <Grid className={classes.boxTentang} justify="center" container>
+      <Grid
+        id="tentang"
+        className={classes.boxTentang}
+        justify="center"
+        container
+      >
         <Tentang />
       </Grid>
       <Typography className={classes.textTitle} variant="h3">
@@ -169,22 +177,44 @@ const HomePage = () => {
       <Grid className={classes.boxFounder} justify="center" container>
         <Keunggulan />
       </Grid>
-      <Grid className={classes.boxFounder} justify="center" container>
+      <Grid
+        id="program"
+        className={classes.boxFounder}
+        justify="center"
+        container
+      >
         <Program />
       </Grid>
-      <Grid className={classes.boxFounder} justify="center" container>
+      <Grid
+        id="support"
+        className={classes.boxFounder}
+        justify="center"
+        container
+      >
         <Supported />
       </Grid>
-      <Grid className={classes.boxFounderPortofolio} justify="center" container>
+      <Grid
+        id="portofolio"
+        className={classes.boxFounderPortofolio}
+        justify="center"
+        container
+      >
         <Portofolio />
       </Grid>
       <Typography className={classes.textTitle} variant="h3">
         Testimoni
       </Typography>
-      <Grid className={classes.boxFounder} justify="center" container>
+      <Grid
+        id="testimoni"
+        className={classes.boxFounder}
+        justify="center"
+        container
+      >
         <Testimoni />
       </Grid>
       <Grid
+        id="kontak"
+        alignItems="center"
         style={{ background: "#002A6E" }}
         className={classes.boxFounder}
         justify="center"

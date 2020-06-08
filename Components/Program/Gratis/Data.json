@@ -1,0 +1,67 @@
+{
+    "Data":[
+        {
+            "id": 0,
+            "text":"Kemah Siap Kerja",
+            "waktu":"90 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 1,
+            "text":"YATIMCAMP: Belajar Membuat Blog ",
+            "waktu":"2 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 2,
+            "text":"PANTIASUHANCAMP: Belajar Membuat blog",
+            "waktu":"30 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 3,
+            "text":"YATIMCAMP: Belajar Sistem Operasi Komputer",
+            "waktu":"2 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 4,
+            "text":"PANTIASUHANCAMP: Belajar Sistem Operasi Komputer",
+            "waktu":"2 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 5,
+            "text":"YATIMCAMP: Belajar Microsoft Office",
+            "waktu":"2 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 6,
+            "text":"PANTIASUHANCAMP: Belajar Microsoft Office",
+            "waktu":"2 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 7,
+            "text":"YATIMCAMP: Kemah Ramadhan",
+            "waktu":"2 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        },
+        {
+            "id": 8,
+            "text":"PANTIASUHANCAMP: Kemah Ramadhan",
+            "waktu":"2 hari",
+            "Tingkat" :"Dasar",
+            "siap" : "Segera"
+        }
+    ]
+}
