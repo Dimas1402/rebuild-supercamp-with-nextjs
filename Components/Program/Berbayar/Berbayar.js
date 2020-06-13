@@ -15,6 +15,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import Footer from "../../Footer/Footer";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -153,9 +154,14 @@ const Berbayar = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Lihat selengkapnya
-                  </Button>
+                  <Link
+                    href="
+                    /website_responsive"
+                  >
+                    <Button size="small" color="primary">
+                      Lihat selengkapnya
+                    </Button>
+                  </Link>
                   <p
                     className={
                       res.siap === "Tersedia" ? classes.siap1 : classes.siap2
