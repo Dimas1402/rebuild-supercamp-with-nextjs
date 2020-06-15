@@ -17,6 +17,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Footer from "../../../../Footer/Footer";
 import BorderColorIcon from "@material-ui/icons/BorderColor";
 import Button from "@material-ui/core/Button";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   marginGrid: {},
@@ -471,13 +472,15 @@ const WebsiteResponsiveComponent = () => {
               {" "}
               Rp. 180.0000,00
             </Typography>
-            <Button
-              className={classes.btnDaftar}
-              variant="contained"
-              color="primary"
-            >
-              <BorderColorIcon /> &nbsp; Daftar Sekarang
-            </Button>
+            <Link href="/pendaftaran">
+              <Button
+                className={classes.btnDaftar}
+                variant="contained"
+                color="primary"
+              >
+                <BorderColorIcon /> &nbsp; Daftar Sekarang
+              </Button>
+            </Link>
           </Grid>
         </Grid>
       </Grid>

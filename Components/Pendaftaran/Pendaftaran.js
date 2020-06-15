@@ -41,6 +41,22 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "40px",
     marginLeft: "1 0px",
   },
+  img: {
+    display: "block",
+  },
+  inputField: {
+    marginBottom: "20px",
+    width: "30%",
+  },
+  [theme.breakpoints.down("xs")]: {
+    img: {
+      display: "none",
+    },
+    inputField: {
+      marginBottom: "20px",
+      width: "100%",
+    },
+  },
 }));
 
 const PendaftaranComponent = () => {
@@ -320,8 +336,7 @@ const PendaftaranComponent = () => {
               </Select>
             </FormControl>
             <FormControl
-              style={{ marginBottom: "20px", width: "30%" }}
-              className={classes.formControl}
+              className={classes.inputField}
               variant="outlined"
               label="gelombang"
               required
@@ -344,8 +359,7 @@ const PendaftaranComponent = () => {
               </Select>
             </FormControl>
             <FormControl
-              style={{ marginLeft: "20px", width: "30%" }}
-              className={classes.formControl}
+              className={classes.inputField}
               variant="outlined"
               label="bulan"
               required
@@ -363,8 +377,7 @@ const PendaftaranComponent = () => {
               </Select>
             </FormControl>
             <FormControl
-              style={{ marginLeft: "20px", width: "30%" }}
-              className={classes.formControl}
+              className={classes.inputField}
               variant="outlined"
               label="tahun"
               required
