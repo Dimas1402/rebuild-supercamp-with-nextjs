@@ -83,9 +83,9 @@ const Portofolio = () => {
             )
           )}
         </div>
-        {/* Add Pagination */}
+
         <div className="swiper-pagination" />
-        {/* Add Arrows */}
+
         <div className="swiper-button-next" />
         <div className="swiper-button-prev" />
       </div>

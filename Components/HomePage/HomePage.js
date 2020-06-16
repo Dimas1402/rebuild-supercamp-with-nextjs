@@ -19,9 +19,6 @@ const useStyles = makeStyles((theme) => ({
     float: "right",
   },
 
-  // gridBox: {
-  //   background: require("../../Assets/bg.png"),
-  // },
   text: {
     fontSize: "40px",
     fontWeight: "bold",
@@ -133,11 +130,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Grid
-        className={classes.gridBox}
-        // style={{ border: "2px solid black" }}
-        container
-      >
+      <Grid className={classes.gridBox} container>
         <Grid id="beranda" item xs={6} sm={4} lg={4}>
           <div className={classes.boxText}>
             <p className={classes.text}>Supercamp </p>

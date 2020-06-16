@@ -71,9 +71,6 @@ export default function Drawers() {
           "Kontak",
         ].map((text, index) => (
           <ListItem button key={text}>
-            {/* <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon> */}
             <ListItemText
               style={{ color: "#1C3864", fontWeight: "bold" }}
               primary={text}

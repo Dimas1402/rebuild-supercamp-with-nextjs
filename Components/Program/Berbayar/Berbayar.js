@@ -57,10 +57,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "100px",
     textAlign: "center",
   },
-  // cardBox: {
-  //   height: "400px",
-  //   witdh: "100px",
-  // },
+
   [theme.breakpoints.down("sm")]: {
     root: {
       width: "300px",

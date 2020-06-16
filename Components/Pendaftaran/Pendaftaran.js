@@ -159,21 +159,6 @@ const PendaftaranComponent = () => {
         console.log(res.data);
         setUserValidation.nama(res.data[0].nama),
           setUserValidation.email(res.data.email);
-        // phoneValidation: res.data.phone,
-        // id_numberValidation: res.data.id_number,
-        // namaValidation: res.data.nama,
-        // tempat_lahirValidation: res.data.tempat_lahir,
-        // tanggal_lahirValidation: res.data.tanggal_lahir,
-        // kotaValidation: res.data.kota,
-        // alamatValidation: res.data.alamat,
-        // kelasValidation: res.data.kelas,
-        // gelombangValidation: res.data.gelombang,
-        // bulanValidation: res.data.bulan,
-        // tahunValidation: res.data.tahun,
-        // photoValidation: res.data.photo,
-        // kaosValidation: res.data.kaos,
-        // loading: false,
-        // msg: res.data.msg,
       })
 
       .catch((err) => {
@@ -211,12 +196,7 @@ const PendaftaranComponent = () => {
           <Typography className={classes.text3} variant="h4">
             Formulir Pendaftaran
           </Typography>
-          <form
-            onSubmit={onSubmit}
-            className={classes.form}
-            // noValidate
-            autoComplete="off"
-          >
+          <form onSubmit={onSubmit} className={classes.form} autoComplete="off">
             <TextField
               name="nama"
               value={userInput.nama}
