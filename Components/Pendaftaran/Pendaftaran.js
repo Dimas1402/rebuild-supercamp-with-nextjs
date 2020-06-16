@@ -10,6 +10,7 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Footer from "../Footer/Footer";
 import Axios from "axios";
+import swal from "sweetalert";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -176,7 +177,12 @@ const PendaftaranComponent = () => {
       })
 
       .catch((err) => {
-        // alert("Silahkan Refresh lagi dan cek koneksi anda");
+        swal({
+          title: "Server Dalam Masalah",
+          text:
+            "Silakan hubungi nomor admin (0878 3788 3317) jika ingin mendaftar",
+          icon: "warning",
+        });
       });
   };
 

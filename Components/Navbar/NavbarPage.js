@@ -6,6 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import Drawers from "../Drawer/Drawer";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -33,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: "150px",
     height: "50px",
+    cursor: "pointer",
   },
   [theme.breakpoints.down("sm")]: {
     menuLg: {
@@ -77,26 +79,9 @@ const NavbarPage = () => {
       <AppBar className={nvbar === true ? classes.nav2 : classes.nav}>
         <Toolbar>
           <Drawers />
-
-          <img className={classes.img} src={Logo} />
-          {/* <div
-            className={classes.menuLg}
-            style={{ position: "absolute", right: "0" }}
-          >
-            {[
-              "Beranda",
-              "Tentang",
-              "Program",
-              "Support",
-              "Portofolio",
-              "Testimoni",
-              "Kontak",
-            ].map((text, index) => (
-              <Button className={classes.btnFont}>
-                <Typography variant="a">{text}</Typography>
-              </Button>
-            ))}
-          </div> */}
+          <Link href="/">
+            <img className={classes.img} src={Logo} />
+          </Link>
         </Toolbar>
       </AppBar>
     </div>

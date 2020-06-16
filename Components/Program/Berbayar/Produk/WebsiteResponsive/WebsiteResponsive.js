@@ -18,6 +18,7 @@ import Footer from "../../../../Footer/Footer";
 import BorderColorIcon from "@material-ui/icons/BorderColor";
 import Button from "@material-ui/core/Button";
 import Link from "next/link";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
 const useStyles = makeStyles((theme) => ({
   marginGrid: {},
@@ -119,6 +120,7 @@ const WebsiteResponsiveComponent = () => {
   const [token, setToken] = React.useState("");
   const [jadwal, setJadwal] = React.useState([]);
   const [sizeWindow, setSizeWindow] = React.useState(0);
+  const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
     setSizeWindow(document.documentElement.clientWidth);
@@ -126,6 +128,7 @@ const WebsiteResponsiveComponent = () => {
   }, []);
 
   React.useEffect(() => {
+    setLoading(true);
     const Login = {
       email: "superprogrammer@gmail.com",
       password: "itmanager",
@@ -139,11 +142,16 @@ const WebsiteResponsiveComponent = () => {
           headers: {
             Authorization: "Bearer" + token,
           },
-        }).then((res) => {
-          console.log("resss", res);
-          const jadwal = res.data;
-          setJadwal(jadwal);
-        });
+        })
+          .then((res) => {
+            console.log("resss", res);
+            const jadwal = res.data;
+            setJadwal(jadwal);
+            setLoading(false);
+          })
+          .catch((err) => {
+            setLoading(false);
+          });
       }
     );
   }, []);
@@ -347,12 +355,21 @@ const WebsiteResponsiveComponent = () => {
         <Grid justify="center" container>
           <Typography className={classes.textJadwal} variant="h4">
             Jadwal pelatihan
-            <p
-              style={{ fontSize: "20px", textAlign: "center", color: "black" }}
-            >
-              Juli 2020
-            </p>
+            {loading === true ? (
+              <LinearProgress style={{ margin: "20px" }} />
+            ) : (
+              <p
+                style={{
+                  fontSize: "20px",
+                  textAlign: "center",
+                  color: "black",
+                }}
+              >
+                Juli 2020
+              </p>
+            )}
           </Typography>
+
           <TableContainer component={Paper}>
             <Table className={classes.table} aria-label="simple table">
               <TableHead style={{ background: "#343A40" }}>
@@ -375,6 +392,7 @@ const WebsiteResponsiveComponent = () => {
                   ))}
                 </TableRow>
               </TableHead>
+
               <TableBody>
                 {jadwal.map((data) => (
                   <TableRow key={data.id}>

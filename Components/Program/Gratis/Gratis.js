@@ -53,6 +53,10 @@ const useStyles = makeStyles((theme) => ({
   boxFounder: {
     marginTop: "80px",
   },
+  gridText: {
+    padding: "100px",
+    textAlign: "center",
+  },
   // cardBox: {
   //   height: "400px",
   //   witdh: "100px",
@@ -60,6 +64,13 @@ const useStyles = makeStyles((theme) => ({
   [theme.breakpoints.down("sm")]: {
     root: {
       width: "300px",
+    },
+    gridText: {
+      padding: "20px",
+      textAlign: "center",
+    },
+    text: {
+      fontSize: "12px",
     },
   },
 }));
@@ -78,7 +89,7 @@ const Berbayar = () => {
   return (
     <>
       <Grid container>
-        <Grid style={{ padding: "100px", textAlign: "center" }} lg={12}>
+        <Grid className={classes.gridText} lg={12}>
           <h1 className={classes.title}>Program Bebas Biaya</h1>
           <p className={classes.text}>
             Demi mewujudkan cita-cita bangsa ini menjadi bangsa yang maju,

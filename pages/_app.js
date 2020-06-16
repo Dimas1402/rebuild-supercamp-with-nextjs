@@ -6,7 +6,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 import "./style.css";
 import "swiper/css/swiper.min.css";
-
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
