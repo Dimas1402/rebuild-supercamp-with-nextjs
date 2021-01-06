@@ -12,7 +12,7 @@
     "@material-ui/icons": "^4.9.1",
     "@zeit/next-css": "^1.0.1",
     "aos": "^2.3.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-es2015": "^6.24.1",
     "isomorphic-unfetch": "^3.0.0",
