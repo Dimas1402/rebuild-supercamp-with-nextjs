@@ -22,7 +22,7 @@
     "react-dom": "16.13.1",
     "react-swipeable-views": "^0.13.9",
     "sweetalert": "^2.1.2",
-    "swiper": "^5.3.8"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "css-loader": "^3.6.0",
