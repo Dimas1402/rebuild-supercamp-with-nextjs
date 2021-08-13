@@ -16,7 +16,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-es2015": "^6.24.1",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "9.3.6",
+    "next": "11.1.0",
     "next-images": "^1.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
